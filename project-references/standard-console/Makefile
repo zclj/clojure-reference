@@ -1,4 +1,4 @@
 .PHONY: test
 
 test:
-	clj -X:test
+	clojure -X:test
