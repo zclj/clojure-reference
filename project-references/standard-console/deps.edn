@@ -16,4 +16,9 @@
         ;; spec
         metosin/malli {:mvn/version "0.8.0"}}
 
- :aliases {}}
+ :aliases {:test
+           {:extra-deps  {io.github.cognitect-labs/test-runner {:git/tag "v0.5.0"
+                                                                :git/sha "b3fd0d2"}}
+            :exect-fn    cognitect.test-runner.api/test
+            :extra-paths ["env/dev/clj" "env/dev/resources" "env/test/resources" "test/clj"]
+            :main-opts   ["-m" "cognitect.test-runner"]}}}
