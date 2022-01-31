@@ -8,6 +8,14 @@
 
 ** Logging
 
+   Logging uses ~clojure.tools.logging~ with ~logback~ as backend.
+
 ** Configuration
 
+   Configuration is based on [[https://github.com/juxt/aero][Juxt Aero]].
+
+** User (user.clj)
+
+** Environments
+   
 ** Stateful Components
