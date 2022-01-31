@@ -5,6 +5,7 @@
   [s]
   (log/info "Hi INFO")
   (log/debug "Hi DEBUG")
+  (tap> {:hello {:interesting :stuff}})
   (str "Hello, " s))
 
 (defn do-log
