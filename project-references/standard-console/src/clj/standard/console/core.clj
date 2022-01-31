@@ -3,6 +3,8 @@
 
 (defn hello
   [s]
+  (log/info "Hi INFO")
+  (log/debug "Hi DEBUG")
   (str "Hello, " s))
 
 (defn do-log
