@@ -1,0 +1,13 @@
+#+TITLE: Standard Console
+
+* Standard Console Project Reference
+
+  Provide an example of a project setup which is a step up from a basic blank template.
+
+* Concerns
+
+** Logging
+
+** Configuration
+
+** Stateful Components
