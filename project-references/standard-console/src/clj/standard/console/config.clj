@@ -17,3 +17,5 @@
   (log/info "Reading config" filename)
   (aero/read-config (io/resource filename) options))
 
+(defmethod ig/init-key :system/env [_ env] env)
+
