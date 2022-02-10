@@ -21,3 +21,6 @@
 
 (defmethod ig/init-key :system/env [_ env] env)
 
+(defn system-config
+  [options]
+  (read-config system-filename options))
