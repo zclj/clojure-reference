@@ -4,6 +4,8 @@
             [clojure.tools.logging :as log]
             [integrant.core :as ig]))
 
+(def ^:const system-filename "system.edn")
+
 (defmethod aero/reader 'ig/ref
   [_ _ value]
   (ig/ref value))
