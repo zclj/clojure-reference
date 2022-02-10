@@ -2,7 +2,8 @@
   (:require
    [clojure.pprint]
    ;; refere to enable a 'reloaded workflow' in the REPL with integrant
-   [integrant.repl :refer [clear go halt prep init reset reset-all]]))
+   [integrant.repl :refer [clear go halt prep init reset reset-all]]
+   [integrant.core :as ig]))
 
 (add-tap (bound-fn* clojure.pprint/pprint))
 
@@ -13,4 +14,7 @@
   (integrant.repl/set-prep!
    ;; set-prep! expects a zero arg fn that give the value of the
    ;; integrant configuration to use
-   (fn [])))
+   (fn []
+     (-> (standard.console.config/system-config {:profile :dev})
+         ;; integrant prepares any components with defined prepare
+         (ig/prep)))))
