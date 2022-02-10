@@ -1,5 +1,6 @@
 (ns standard.console.core
-  (:require [clojure.tools.logging :as log]))
+  (:require [clojure.tools.logging :as log]
+            [standard.console.config :as config]))
 
 (defn hello
   [s]

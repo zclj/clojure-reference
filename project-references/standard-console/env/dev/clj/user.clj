@@ -3,7 +3,8 @@
    [clojure.pprint]
    ;; refere to enable a 'reloaded workflow' in the REPL with integrant
    [integrant.repl :refer [clear go halt prep init reset reset-all]]
-   [integrant.core :as ig]))
+   [integrant.core :as ig]
+   [standard.console.core]))
 
 (add-tap (bound-fn* clojure.pprint/pprint))
 
