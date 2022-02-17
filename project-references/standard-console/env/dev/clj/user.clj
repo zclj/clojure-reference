@@ -19,3 +19,5 @@
      (-> (standard.console.config/system-config {:profile :dev})
          ;; integrant prepares any components with defined prepare
          (ig/prep)))))
+
+(dev-prep!)
