@@ -1,6 +1,7 @@
 (ns standard.console.core
   (:require [clojure.tools.logging :as log]
-            [standard.console.config :as config]))
+            [standard.console.config :as config]
+            [standard.console.env :as env]))
 
 (defn hello
   [s]
