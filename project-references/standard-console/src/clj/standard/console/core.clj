@@ -17,3 +17,8 @@
   (tap> {:do-log {:interesting :stuff}}))
 
 (defonce system (atom nil))
+
+(defn start-app
+  [& [params]]
+  ;; start-fn is invoked from params, defaults, or we do nothing
+  ((or (:start params) (:start env/defaults) (fn []))))
